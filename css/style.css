@@ -1,0 +1,373 @@
+@import url("https://fonts.googleapis.com/css2? family= Playfair+Display:ital,wght@0,600;1,900 & display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+body {
+  text-align: center;
+  font-family: sans-serif;
+  background-color: #000;
+}
+
+.head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 63px;
+  background: #000;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+}
+
+.navbar {
+  display: flex;
+  margin-right: 10px;
+}
+.navbar a {
+  display: block;
+  padding: 20px 20px;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-family: "bebas neue";
+}
+.navbar ahover {
+  background: #3e3e3e;
+}
+
+.logo {
+  margin-left: 30px;
+}
+.logo a {
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-family: "Playfair Display", serif;
+}
+
+.header {
+  padding-top: 100px;
+  padding-left: 63px;
+  padding-right: 63px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+}
+
+.title {
+  margin-bottom: 40px;
+  font-size: 60px;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #000;
+}
+
+.subt {
+  display: block;
+  font-size: 60px;
+  color: #ff0000;
+  padding: 0 100px;
+}
+
+.content {
+  background-color: #000;
+  display: flex;
+  flex-direction: column;
+}
+
+.title2 {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+  font-size: 60px;
+  text-transform: uppercase;
+  color: #fff;
+  padding-top: 50px;
+  font-family: "Playfair Display", serif;
+}
+
+.subt2 {
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  font-size: 40px;
+  padding-top: 70px;
+  padding-bottom: 50px;
+  background-color: #370000;
+}
+
+.footer {
+  background-color: #000;
+  bottom: 0;
+  width: 100%;
+  padding: 10px;
+}
+
+.footertext {
+  color: #fff;
+  padding-top: 10px;
+  font-family: "bebas neue";
+}
+
+.links {
+  padding: 10px 10px;
+  justify-content: center;
+}
+.links a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 20px;
+  border: 3px solid #fff;
+  padding: 3px;
+}
+
+.ubic_container {
+  display: flex;
+  flex-direction: column;
+}
+.ubic_container p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: #000;
+  margin: 0;
+  padding: 20px 20px;
+  color: #fff;
+  font-size: 40px;
+}
+.ubic_container p .parrafos {
+  font-size: 25px;
+}
+.ubic_container a {
+  display: flex;
+  justify-content: center;
+}
+.ubic_container a .map {
+  margin-bottom: 20px;
+  width: 800px;
+  height: 500px;
+  border-radius: 10%;
+}
+
+.box {
+  border: 1px solid #fff;
+  background: #000;
+  width: 80px;
+  height: 40px;
+  text-align: center;
+  margin: 10px;
+  float: left;
+  justify-content: center;
+  padding: 20px;
+}
+.box a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.container {
+  display: flex;
+  padding: 10px;
+  justify-content: center;
+}
+
+.tel {
+  color: #fff;
+  font-size: 35px;
+  padding: 20px;
+}
+.tel a {
+  text-decoration: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+.container-product {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.container2 {
+  height: 450px;
+  width: 20%;
+  box-shadow: 0 0 7px #fff;
+}
+.container2 .box2 {
+  height: 200px;
+  width: 100%;
+  margin-bottom: 170px;
+}
+.container2 .box2 img {
+  margin: auto;
+  display: block;
+  height: 300px;
+  width: 99%;
+}
+.container2 .informacion {
+  margin-top: -60px;
+  height: 70px;
+  width: 100%;
+  color: #fff;
+}
+.container2 .informacion h2 {
+  font-family: sans-serif;
+  font-size: 1, 2em;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.container2 .informacion p {
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 0.9em;
+}
+.container2 .precio {
+  color: #fff;
+  height: 50px;
+  width: 85%;
+  margin: auto;
+  font-family: sans-serif;
+  display: flex;
+  justify-content: space-between;
+}
+.container2 .precio .box-precio {
+  width: 80px;
+}
+.container2 .precio .box-precio .precio1 {
+  color: #ff0000;
+  font-size: 1em;
+  text-decoration: line-through;
+}
+.container2 .precio .box-precio .precio2 {
+  font-size: 1.5em;
+}
+.container2 .precio .shoping {
+  font-size: 2.5em;
+}
+
+.btn-menu {
+  display: none;
+  color: #fff;
+  font-size: 4em;
+}
+
+#menu {
+  display: none;
+}
+
+#menu:checked + .navbar {
+  clip-path: inset(0 0 0 0);
+}
+
+@media (max-width: 830px) {
+  .navbar {
+    position: fixed;
+    top: 213px;
+    bottom: 0;
+    background-color: #000;
+    width: 100%;
+    left: 0px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px -120px 0px -175px;
+    clip-path: inset(0 0 100% 0);
+  }
+  .btn-menu {
+    display: block;
+    cursor: pointer;
+  }
+  .subt {
+    display: none;
+  }
+  .header {
+    flex-direction: column;
+  }
+  .subt2 {
+    font-size: 22px;
+    padding-top: 40px;
+    padding-bottom: 30px;
+  }
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  footer .footertext {
+    font-size: 20px;
+  }
+  .ubic_container {
+    display: flex;
+    flex-direction: column;
+  }
+  .ubic_container p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #000;
+    margin: 0;
+    padding: 20px 20px;
+    color: #fff;
+    font-size: 40px;
+  }
+  .ubic_container p .parrafos {
+    font-size: 25px;
+  }
+  .ubic_container a {
+    display: flex;
+    justify-content: center;
+  }
+  .ubic_container a .map {
+    margin-bottom: 20px;
+    width: 350px;
+    height: 220px;
+    border-radius: 10%;
+  }
+  .title2 {
+    font-size: 25px;
+  }
+  .title-nosotros,
+  .title-contacto,
+  .title-productos {
+    font-size: 30px;
+  }
+  .box {
+    width: 70px;
+    height: 40px;
+    margin: 5px;
+  }
+  .container-product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .container2 {
+    margin-bottom: 30px;
+    width: 90%;
+  }
+  .container2 .box2 {
+    height: 200px;
+    width: 100%;
+    margin-bottom: 170px;
+  }
+  .container2 .box2 img {
+    margin: auto;
+    display: block;
+    height: 300px;
+    width: 99%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

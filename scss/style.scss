@@ -1,0 +1,373 @@
+@import url('https://fonts.googleapis.com/css2? family= Playfair+Display:ital,wght@0,600;1,900 & display=swap');
+$white:    #fff !default;
+$black:    #000 !default;
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+body {
+    text-align: center;
+    font-family: sans-serif;
+    background-color: $black;
+}
+
+.head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 63px;
+    background: $black;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+.navbar {
+    display: flex;
+    margin-right: 10px;
+    a{
+        display: block;
+        padding: 20px 20px;
+        color: #fff;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 20px;
+        font-family: "bebas neue";
+        &hover{
+            background: #3e3e3e;
+        }
+    }
+}
+
+.logo {
+    margin-left: 30px;
+    a {
+        text-decoration: none;
+        color: $white;
+        text-transform: uppercase;
+        font-size: 20px;
+        font-family: 'Playfair Display', serif;
+    }
+}
+.header {
+    padding-top: 100px;
+    padding-left: 63px;
+    padding-right: 63px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#fff;
+
+}
+
+.title {
+    margin-bottom: 40px;
+    font-size: 60px;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: $black;
+}
+
+.subt {
+    display: block;
+    font-size: 60px;
+    color:#ff0000;
+    padding: 0 100px;
+}
+
+
+.content{
+    background-color: $black;
+    display: flex;
+    flex-direction: column;
+}
+
+.title2 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+    font-size: 60px;
+    text-transform: uppercase;
+    color: $white;
+    padding-top: 50px;
+    font-family: 'Playfair Display', serif;
+}
+
+.subt2{
+    display: flex;
+    justify-content: center;
+    color:$white;
+    font-size: 40px;
+    padding-top: 70px;
+    padding-bottom: 50px;
+    background-color: #370000;
+}
+
+.footer{
+    background-color: $black;
+    bottom: 0;
+    width: 100%;
+    padding: 10px; 
+}
+.footertext{   
+     color: $white;
+     padding-top: 10px;
+     font-family: "bebas neue";
+     
+}
+
+.links{
+    padding:10px 10px;
+    justify-content: center;
+    a{
+        text-decoration: none;
+        text-transform: uppercase;
+        color:$white;
+        font-size: 20px;
+        border: 3px solid $white;
+        padding: 3px;
+    
+    }  
+}
+.ubic_container{
+    display: flex;
+    flex-direction: column;
+    p{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        background-color: $black;
+        margin: 0;
+        padding: 20px 20px;
+        color: $white;
+        font-size: 40px;
+        .parrafos{
+           font-size: 25px;
+        }
+    }
+    a{
+        display: flex;
+        justify-content: center;
+        .map{
+            margin-bottom: 20px;
+            width: 800px;
+            height: 500px;
+            border-radius: 10%;
+        }
+    }
+}
+.box{
+    border: 1px solid $white;
+    background: $black;
+    width: 80px;
+    height: 40px;
+    text-align: center;
+    margin: 10px;
+    float: left;
+    justify-content: center;
+    padding: 20px;
+    a{
+        text-decoration: none;
+        color: $white;
+    }
+}
+
+.container{
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+}
+.tel{
+    color:$white ;
+    font-size: 35px;
+    padding: 20px;
+    a{
+        text-decoration: none;
+        color: $white;
+        cursor: pointer;
+    }
+}
+
+
+.container-product{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.container2{
+    height: 450px;
+    width: 20%;
+    box-shadow: 0 0 7px $white;
+    .box2{
+        height: 200px;
+        width: 100%;
+        margin-bottom: 170px;
+        img{
+            margin: auto;
+            display: block;
+            height: 300px;
+            width: 99%;
+        }
+    }
+    .informacion{
+        margin-top: -60px;
+        height: 70px;
+        width: 100%;
+        color: $white;
+        h2{
+            font-family: sans-serif;
+            font-size: 1,2em;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        p{
+            text-align: center;
+            font-family: sans-serif;
+            font-size: .9em;
+        }
+    }
+    .precio{
+        color: $white;
+        height: 50px;
+        width: 85%;
+        margin: auto;
+        font-family: sans-serif;
+        display: flex;
+        justify-content: space-between;
+        .box-precio{
+            width: 80px;
+            .precio1{
+                color: #ff0000;
+                font-size: 1em;
+                text-decoration: line-through;
+            }
+            .precio2{
+                font-size: 1.5em;
+            }
+    }
+    .shoping{
+        font-size: 2.5em;
+    }
+    }
+}
+.btn-menu{
+    display: none;
+    color: #fff;
+    font-size: 4em;
+}
+
+#menu{
+    display: none;
+}
+#menu:checked + .navbar{
+    clip-path: inset(0 0 0 0);   
+ } 
+
+@media (max-width:830px) {
+    .navbar{
+         position: fixed;
+         top: 213px;
+         bottom: 0;
+         background-color: $black;
+         width: 100%;
+         left: 0px;
+         display: flex;
+         justify-content:space-evenly;
+         flex-direction: column;
+         align-items: center;
+         margin: 0px -120px 0px -175px;
+         clip-path: inset(0 0 100% 0);
+    }
+    .btn-menu{
+        display: block;
+        cursor: pointer;
+    }
+    .subt{
+        display: none
+    }
+    .header{
+        flex-direction: column;
+    }
+    .subt2{
+        font-size: 22px;
+        padding-top: 40px;
+        padding-bottom: 30px;
+    }
+    footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .footertext{
+            font-size: 20px
+        }
+    }
+    .ubic_container{
+        display: flex;
+        flex-direction: column;
+        p{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            background-color: $black;
+            margin: 0;
+            padding: 20px 20px;
+            color: $white;
+            font-size: 40px;
+            .parrafos{
+               font-size: 25px;
+            }
+        }
+        a{
+            display: flex;
+            justify-content: center;
+            .map{
+                margin-bottom: 20px;
+                width: 350px;
+                height: 220px;
+                border-radius: 10%;
+            }
+        }
+    }
+    .title2{
+        font-size: 25px;
+    }
+    .title-nosotros,
+    .title-contacto,
+    .title-productos{
+        font-size: 30px;
+    }
+    .box{
+        width: 70px;
+        height: 40px;
+        margin: 5px;
+    }
+
+    .container-product{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container2{
+        margin-bottom: 30px;
+        width: 90%;
+        .box2{
+            height: 200px;
+            width: 100%;
+            margin-bottom: 170px;
+            img{
+                margin: auto;
+                display: block;
+                height: 300px;
+                width: 99%;
+            }
+        }
+
+        
+    }
+}
